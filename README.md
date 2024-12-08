@@ -1,2 +1,6 @@
 "# Echo-Blog"
-edited from amish's computer
+rujen's edit
+
+- hi
+- hello
+- using bullets
