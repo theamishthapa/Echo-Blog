@@ -1,2 +1,2 @@
 "# Echo-Blog"
-edited from amish's computer
+rujen's edit from amish's computer
