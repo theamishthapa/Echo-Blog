@@ -19,16 +19,24 @@
     </div>
     <div class="container">
       <form>
-        Email<input type="text" placeholder="someone@email.com" />
-        Password<input type="password" placeholder="Password" />
-        <a href="#" class="forgot-pw-link">Forgot Password?</a>
+        Email<input
+          type="email"
+          placeholder="someone@email.com"
+          class="input-email"
+        />
+        Password<input
+          type="password"
+          placeholder="Password"
+          class="input-password"
+        />
+        <a href="#" class="forgot-pw-link link">Forgot Password?</a>
       </form>
 
-      <button class="login-button">Login</button>
+      <button class="login-button" onclick="checkInput()">Login</button>
 
       <div class="sign-up">
         Dont have an account?
-        <span class="sign-up-link"><a href="#">Sign Up Now!</a></span>
+        <span class="sign-up-link link"><a href="#">Sign Up Now!</a></span>
       </div>
     </div>
 
@@ -37,5 +45,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
