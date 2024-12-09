@@ -7,6 +7,7 @@
 
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -18,8 +19,8 @@ body {
   padding: 20px;
   border: 1px solid red;
   border-radius: 8px;
-  width: 300px;
-  height: 300px;
+  width: auto;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -90,8 +91,18 @@ input:focus {
   color: #d90429;
   font-weight: bold;
   text-decoration: none;
+  text-align: center;
 }
 
 .sign-up-link:hover {
+  text-decoration: underline;
+}
+
+.forgot-pw-link {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.forgot-pw-link:hover {
   text-decoration: underline;
 }
