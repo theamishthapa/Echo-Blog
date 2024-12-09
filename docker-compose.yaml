@@ -21,6 +21,8 @@ services:
       - "3000:3000"
     volumes:
       - ./backend/:/app
+    command: bash -c "npm install --save-dev nodemon  & npm install express cors mysql2 & npx nodemon index.js "
+    working_dir: /app
     restart: always
 
   php:
