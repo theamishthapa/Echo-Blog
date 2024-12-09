@@ -37,7 +37,7 @@ services:
     container_name: db
     image: mysql:latest
     environment:
-      MYSQL_ROOT_PASSWORD: ""
+      MYSQL_ROOT_PASSWORD: "root"
       MYSQL_DATABASE: "mydatabase"
     volumes:
       - ./mysql:/var/lib/mysql
@@ -56,4 +56,9 @@ services:
     depends_on:
       - db
     restart: always
+  echo_cloud:
+    image: cloudflare/cloudflared:latest
+    container_name: echo_cloud
+    command: tunnel --no-autoupdate run --token eyJhIjoiNzJmZGJjM2U2YjJlNGM1YTg4MWNhMDNiMTZhMDc5NTEiLCJ0IjoiOTY1Y2ZjM2QtNzFhYS00MWM0LTg2NzEtYjRmZGVmMWI1ZTRlIiwicyI6Ik5qSmhOMlUwWVdVdE9XUm1ZeTAwTnpBMkxXSXpNR0V0TnpJd09EY3paR1kxTUdNMSJ9
+    restart: unless-stopped
 
