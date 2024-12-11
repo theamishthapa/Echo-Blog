@@ -1,7 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: "Courier New", Courier, monospace;
+  font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
   user-select: none;
 }
@@ -29,6 +29,20 @@ body {
   gap: 15px;
 }
 
+.sign-up-btn {
+  background-color: #ef233c;
+  border: none;
+  color: white;
+  padding: 15px;
+  border-radius: 25px;
+  font-size: medium;
+  cursor: pointer;
+}
+
+.sign-up-btn:hover {
+  background-color: #d7616e;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -43,29 +57,10 @@ input {
   background-color: white;
 }
 
-input ::placeholder {
-  background-color: #8d99ae;
-}
-
 input:focus {
   border-color: #ef233c;
   outline: none;
   background-color: #edf2f4;
-}
-
-.login-button {
-  background-color: #ef233c;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-size: 20px;
-  padding: 10px;
-  margin-top: 50px;
-  margin-bottom: 20px;
-}
-
-.login-button:hover {
-  background-color: #d90429;
 }
 
 .logo {
@@ -78,47 +73,4 @@ input:focus {
   height: auto;
   display: block;
   margin: 0 auto;
-}
-
-.forgot-pw-link {
-  color: red;
-}
-
-.forgot-pw-link:hover {
-  color: #d90429;
-}
-
-.sign-up-link a {
-  color: #d90429;
-  font-weight: bold;
-  text-decoration: none;
-  text-align: center;
-}
-
-.sign-up-link:hover {
-  text-decoration: underline;
-}
-
-.forgot-pw-link,
-.show-pw {
-  text-decoration: none;
-  font-weight: bold;
-  font-size: small;
-  margin-left: auto;
-  text-wrap: nowrap;
-}
-
-.forgot-pw-link:hover {
-  text-decoration: underline;
-}
-
-.flex {
-  display: flex;
-  position: relative;
-}
-
-.show-pw input[type="checkbox"] {
-  height: 15px;
-  margin-left: 5px;
-  accent-color: #d90429;
 }
