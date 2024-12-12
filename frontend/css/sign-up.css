@@ -51,6 +51,7 @@ body {
     #8d99ae
   ); /* Gradient background */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0.75;
 }
 
 .sign-up-btn {
@@ -62,6 +63,7 @@ body {
   font-size: medium;
   cursor: pointer;
   font-weight: bold;
+  transition: background-color 0.7s;
 }
 
 .sign-up-btn:hover {
@@ -102,7 +104,8 @@ input:focus {
 }
 
 .slogan {
-  color: #ef233c;
+  color: #000000;
+  font-weight: bold;
 }
 
 .login-link {
