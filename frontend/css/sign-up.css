@@ -4,6 +4,7 @@
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
   user-select: none;
+  font-family: "Courier New", Courier, monospace;
 }
 
 body {
@@ -20,13 +21,13 @@ body {
   padding: 20px;
   border: 1px solid red;
   border-radius: 8px;
-  width: auto;
+  width: 400px;
   height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: #ef233c;
-  gap: 15px;
+  color: #000000;
+  gap: 20px;
 }
 
 .sign-up-btn {
@@ -37,6 +38,7 @@ body {
   border-radius: 25px;
   font-size: medium;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .sign-up-btn:hover {
@@ -47,6 +49,7 @@ form {
   display: flex;
   flex-direction: column;
   gap: 1px;
+  color: black;
 }
 
 input {
@@ -69,8 +72,27 @@ input:focus {
 }
 
 .logo img {
-  max-width: 400px; /* Adjust size of the logo */
+  max-width: 300px; /* Adjust size of the logo */
   height: auto;
   display: block;
   margin: 0 auto;
+}
+
+.slogan {
+  color: #ef233c;
+}
+
+.login-link {
+  margin-left: 25px;
+}
+
+.login-link a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-link a:hover {
+  color: #ef233c;
+  text-decoration: underline;
 }

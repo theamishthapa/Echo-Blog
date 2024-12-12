@@ -3,31 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign Up to Echo</title>
+    <title>Sign Up to Echooo</title>
     <link rel="stylesheet" href="css/sign-up.css" />
   </head>
   <body>
+    <div class="logo">
+      <img src="./images/cropped-echo-logo.png" />
+      <span class="slogan">Echo Your Inner Voice</span>
+    </div>
+
     <form>
-      <div class="logo">
-        <img src="./images/cropped-echo-logo.png">
-      </div>
       <div class="container">
         <label for="name">Full Name: </label>
+        <input type="text" class="form-input" required />
+        <label for="password">Password: </label>
         <input type="text" class="form-input" />
-        <label for="usernmame">Username </label>
+        <label for="retype-password">Re-type Password: </label>
         <input type="text" class="form-input" />
-        <label for="password">Password </label>
-        <input type="password" class="form-input" />
-        <label for="retype-password">Re-type Password </label>
-        <input type="password" class="form-input" />
-        <label for="email">Email </label>
+        <label for="email">Email: </label>
         <input type="email" class="form-input" />
-        <input type="button" name="submit" value="Create Account"  class="sign-up-btn"/>
+        <input
+          type="button"
+          name="submit"
+          value="Create Account"
+          class="sign-up-btn"
+        />
+        <div class="login-link">
+          Already have an account? <a href="./index.html">Log in</a>
+        </div>
       </div>
-      </div>
-
-      <div class="submit-btn">
-      
     </form>
+
+    <script src="./js/sign-up.js"></script>
   </body>
 </html>
