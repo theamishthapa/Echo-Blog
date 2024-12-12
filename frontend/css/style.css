@@ -11,15 +11,33 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #2b2d42, #8d99ae, #ef233c);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+/* Gradient Animation */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .container {
   text-align: left;
   padding: 20px;
-  border: 1px solid red;
-  border-radius: 8px;
+  border-radius: 10px;
   width: auto;
   height: auto;
   display: flex;
@@ -27,6 +45,12 @@ body {
   justify-content: center;
   color: #ef233c;
   gap: 15px;
+  background: linear-gradient(
+    135deg,
+    #edf2f4,
+    #8d99ae
+  ); /* Gradient background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 form {
@@ -55,7 +79,7 @@ input:focus {
 }
 
 .login-button {
-  background-color: #ef233c;
+  background-color: #e74155;
   color: white;
   border: none;
   border-radius: 8px;
@@ -68,7 +92,7 @@ input:focus {
 }
 
 .login-button:hover {
-  background-color: #d90429;
+  background-color: #ef233c;
 }
 
 .logo {
@@ -102,7 +126,7 @@ input:focus {
   text-align: center;
 }
 
-.sign-up-link:hover {
+.sign-up-link a:hover {
   text-decoration: underline;
 }
 
