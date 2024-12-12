@@ -79,7 +79,7 @@ input:focus {
 }
 
 .login-button {
-  background-color: #e74155;
+  background-color: #e1273d;
   color: white;
   border: none;
   border-radius: 8px;
@@ -89,10 +89,15 @@ input:focus {
   margin-bottom: 20px;
   cursor: pointer;
   font-weight: bold;
+  transition: background-color 0.7s;
 }
 
 .login-button:hover {
-  background-color: #ef233c;
+  background-color: #e85465;
+}
+
+.login-button:active {
+  background-color: #cf7983;
 }
 
 .logo {
