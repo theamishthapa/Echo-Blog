@@ -58,5 +58,7 @@ services:
   echo_cloud:
     image: cloudflare/cloudflared:latest
     container_name: echo_cloud
-    command: tunnel --no-autoupdate run --token eyJhIjoiNzJmZGJjM2U2YjJlNGM1YTg4MWNhMDNiMTZhMDc5NTEiLCJ0IjoiOTY1Y2ZjM2QtNzFhYS00MWM0LTg2NzEtYjRmZGVmMWI1ZTRlIiwicyI6Ik5qSmhOMlUwWVdVdE9XUm1ZeTAwTnpBMkxXSXpNR0V0TnpJd09EY3paR1kxTUdNMSJ9
+    env_file:
+      - ./.env
+    command: tunnel --no-autoupdate run --token ${CLOUDFLARE_TOKEN}
     restart: unless-stopped
