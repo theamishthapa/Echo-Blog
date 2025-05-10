@@ -1,9 +1,10 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: "Courier New", Courier, monospace;
+  font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
   user-select: none;
+  font-family: "Courier New", Courier, monospace;
 }
 
 body {
@@ -11,11 +12,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  min-height: 100vh;
   background: linear-gradient(135deg, #2b2d42, #8d99ae, #ef233c);
   background-size: 400% 400%;
   animation: gradientAnimation 10s ease infinite;
@@ -38,25 +38,42 @@ body {
   text-align: left;
   padding: 20px;
   border-radius: 10px;
-  width: auto;
+  width: 400px;
   height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: #ef233c;
-  gap: 15px;
+  color: #000000;
+  gap: 20px;
   background: linear-gradient(
     135deg,
     #edf2f4,
     #8d99ae
   ); /* Gradient background */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0.75;
+}
+
+.sign-up-btn {
+  background-color: #ef233c;
+  border: none;
+  color: white;
+  padding: 15px;
+  border-radius: 25px;
+  font-size: medium;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.7s;
+}
+
+.sign-up-btn:hover {
+  background-color: #d7616e;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 1px;
   color: black;
 }
 
@@ -68,36 +85,10 @@ input {
   background-color: white;
 }
 
-input ::placeholder {
-  background-color: #8d99ae;
-}
-
 input:focus {
   border-color: #ef233c;
   outline: none;
   background-color: #edf2f4;
-}
-
-.login-button {
-  background-color: #e1273d;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-size: 20px;
-  padding: 10px;
-  margin-top: 50px;
-  margin-bottom: 20px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background-color 0.7s;
-}
-
-.login-button:hover {
-  background-color: #e85465;
-}
-
-.login-button:active {
-  background-color: #cf7983;
 }
 
 .logo {
@@ -106,55 +97,28 @@ input:focus {
 }
 
 .logo img {
-  max-width: 400px; /* Adjust size of the logo */
+  max-width: 300px; /* Adjust size of the logo */
   height: auto;
   display: block;
   margin: 0 auto;
 }
 
-.forgot-pw-link {
-  color: red;
-}
-
-.forgot-pw-link:hover {
-  color: #d90429;
-}
-
-.sign-up {
-  color: black;
-}
-
-.sign-up-link a {
-  color: #d90429;
+.slogan {
+  color: #000000;
   font-weight: bold;
-  text-decoration: none;
-  text-align: center;
 }
 
-.sign-up-link a:hover {
-  text-decoration: underline;
+.login-link {
+  margin-left: 25px;
 }
 
-.forgot-pw-link,
-.show-pw {
+.login-link a {
+  color: #ef233c;
   text-decoration: none;
   font-weight: bold;
-  font-size: small;
-  margin-left: auto;
-  text-wrap: nowrap;
 }
 
-.forgot-pw-link:hover {
+.login-link a:hover {
+  color: #ef233c;
   text-decoration: underline;
-}
-
-.flex {
-  display: flex;
-  position: relative;
-}
-
-.show-pw input[type="checkbox"] {
-  height: 15px;
-  margin-left: 5px;
-  accent-color: #d90429;
 }
